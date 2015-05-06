@@ -31,10 +31,6 @@ CREATE TABLE Bookings (
 
 
 
-# --------------------------------------------------------
-#
-# Структура таблицы для таблицы 'Clients'
-#
 
 CREATE TABLE Clients (
    client_id int(10) unsigned NOT NULL auto_increment,
@@ -80,9 +76,6 @@ CREATE TABLE Corporates (
    UNIQUE username (username)
 );
 
-#
-# Сдампать данные таблицы 'Corporates'
-#
 
 INSERT INTO Corporates VALUES ( '4', 'tour', 'Test Company', '56785685', '684', '84584', '8468', '846784 68', 'test', '45845', '80');
 INSERT INTO Corporates VALUES ( '12', 'tour', 'operator', 'abc', '12345', '12345', 'op', 'op@', 'op', 'op', '123');
@@ -92,10 +85,7 @@ INSERT INTO Corporates VALUES ( '11', 'airline', 'New airline', 'Saint-Petersbur
 INSERT INTO Corporates VALUES ( '10', 'tour', 'lotus', 'Saint-Petersburg
 ', '2345', '23467237', 'lotus', 'lotus@rics.ru', 'lotus', 'lotus', '5');
 
-# --------------------------------------------------------
-#
-# Структура таблицы для таблицы 'Messages'
-#
+# -------------------------
 
 CREATE TABLE Messages (
    id int(10) unsigned NOT NULL auto_increment,
@@ -110,7 +100,6 @@ CREATE TABLE Messages (
 
 # --------------------------------------------------------
 #
-# Структура таблицы для таблицы 'Operators'
 #
 
 CREATE TABLE Operators (
@@ -125,7 +114,6 @@ CREATE TABLE Operators (
 );
 
 #
-# Сдампать данные таблицы 'Operators'
 #
 
 INSERT INTO Operators VALUES ( '1', 'administrator', 'administrator', 'The administration account', 'administrator', '0');
@@ -134,7 +122,6 @@ INSERT INTO Operators VALUES ( '3', 'operator2', 'operator2', 'The second operat
 
 # --------------------------------------------------------
 #
-# Структура таблицы для таблицы 'Rates'
 #
 
 CREATE TABLE Rates (
@@ -157,7 +144,6 @@ CREATE TABLE Rates (
 
 # --------------------------------------------------------
 #
-# Структура таблицы для таблицы 'Rooms'
 #
 
 CREATE TABLE Rooms (
@@ -241,7 +227,6 @@ INSERT INTO inventory VALUES ( '1', '5', '5', '3', '5', '3');
 
 # --------------------------------------------------------
 #
-# Структура таблицы для таблицы 'occupancy'
 #
 
 CREATE TABLE occupancy (
@@ -255,7 +240,6 @@ CREATE TABLE occupancy (
 );
 
 #
-# Сдампать данные таблицы 'occupancy'
 #
 
 INSERT INTO occupancy VALUES ( '1', '1', '2', '3', '2', '7');
